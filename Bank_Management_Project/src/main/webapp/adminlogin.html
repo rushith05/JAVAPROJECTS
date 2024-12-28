@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><i class="fa-solid fa-building-columns logo"></i><span class="logotext"> Scotia Bank</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item one">
+                <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item two">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item three">
+                <a class="nav-link" href="userlogin.html">USER LOGIN</a>
+              </li>
+              <li class="nav-item four">
+                <a class="nav-link" href="adminlogin.html" tabindex="-1" aria-disabled="true">ADMIN LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+      <div class="loginbox">
+        <div class="heading">
+            <span>ADMIN LOGIN</span>
+        </div>
+        <form action="adminlogin2" method="post">
+            <label for="Email" class="ena">Email ID:</label><br>
+            <input class="inp" placeholder="Enter Email" type="email" id="email" name="email" required><br>
+            
+            <label for="password" class="ena">Password:</label><br>
+            <input class="inp" placeholder="Enter Password" type="password" id="password" name="password" required><br><br>
+            
+            <input class="sub" type="submit" value="LOGIN" style="position: absolute;bottom: 60px;"><br><br>
+        </form>
+       
+
+      </div>
+    
+</body>
+</html>

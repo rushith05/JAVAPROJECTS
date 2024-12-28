@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><i class="fa-solid fa-building-columns logo"></i><span class="logotext"> Scotia Bank</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item one">
+                <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item two">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item three">
+                <a class="nav-link" href="userlogin.html">USER LOGIN</a>
+              </li>
+              <li class="nav-item four">
+                <a class="nav-link" href="adminlogin.html" tabindex="-1" aria-disabled="true">ADMIN LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="regbox">
+        <div class="headreg">
+            <span>REGISTRATION FORM</span>
+        </div>
+        <form action="registrationform" method="post">
+            <div class="formleft">
+                <table class="tbleft">
+                    <tr>
+                        <td><label for="firstname">First Name</label></td>
+                        <td><input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dateofbirth">Date of Birth</label></td>
+                        <td><input type="date" name="dateofbirth" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Emai Id</label></td>
+                        <td><input type="email" id="regemail" name="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phonenumber">Phone Number</label></td>
+                        <td><input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter Phone Number" pattern="[7-9]{1}[0-9]{9}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pin">Enter PIN</label></td>
+                        <td><input type="number" name="pin" id="pin1" pattern="[0-9]{4}" placeholder="Enter 4 digit PIN" required></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="formright">
+                <table class="tbright">
+                    <tr>
+                        <td><label for="lastname">Last Name</label></td>
+                        <td><input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other 
+                    </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="password" class="pass">Password</label></td>
+                        <td><input type="password" id="regpassword" class="pass" name="password" placeholder="Enter Password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><textarea name="address" id="address" cols="25" rows="2" placeholder="Enter Full Address" class="add" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="balance">Enter Amount</label></td>
+                        <td><input type="number"  name="balance" placeholder="Enter Amount" required></td>
+                    </tr>
+                </table>
+            </div>
+        
+        <div class="regfoot">
+            <input type="submit" value="Register" id="reg">
+
+        </div>
+        </form>
+
+      </div>
+      
+
+
+
+</body>
+</html>
